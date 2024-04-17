@@ -30,7 +30,7 @@ most important part. Add your answer to this markdown file.
 $T(n) = {2     if n \le 1  
 3T(n/3) + n     if n \gt 1}$
 
-$3T(n/3) + n = 3(c(n/3)log(n/3)) + n = c * nlog(n/3) + n = c * nlog(n) - c * nlog(3) + n = c * nlog(n) - c * n + n = c * nlog(n) - (c - 1) * n$
+$3T(n/3) + n = 3(c(n/3) \log(n/3)) + n = c \cdot n \log(n/3) + n = c \cdot n \log(n) - c \cdot n \log(3) + n = c \cdot n \log(n) - c \cdot n + n = c \cdot n \log(n) - (c - 1) \cdot n$
 
 $c = 2$ so that $c - 1 = 1$
 
