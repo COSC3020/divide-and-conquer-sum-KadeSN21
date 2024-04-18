@@ -27,12 +27,9 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-$T(n) = {2     if n \le 1  
-3T(n/3) + n     if n \gt 1}$
+$T(n) = {C     if n \le 1 
+3T(n/3) + O(n)     if n \gt 1}$
 
-$3T(n/3) + n = 3(c(n/3) \log(n/3)) + n = c \cdot n \log(n/3) + n = c \cdot n \log(n) - c \cdot n \log(3) + n = c \cdot n \log(n) - c \cdot n + n = c \cdot n \log(n) - (c - 1) \cdot n$
-
-$c = 2$ so that $c - 1 = 1$
+By the Master Theorum, if $d = log_b(a), T(n) = O(n^d log(n))$. For this implementation, a = 3, b = 3, d = 1. $log_3(3) = 1, d = 1$ so this holds true, therefor $T(n) = O(n^1 log(n)) = O(n log(n))
 
 Thus $T(n) = O(n log n)$
-
