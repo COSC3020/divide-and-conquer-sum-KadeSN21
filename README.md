@@ -40,4 +40,4 @@ By the Master Theorum, if $d = log_b(a), T(n) = O(n^d log(n))$. For this impleme
 
 Thus $T(n) = O(n log n)$
 
-Help: ChatGPT and Stackoverflow.com
+Help: ChatGPT helped refresh my markdown formatting.
