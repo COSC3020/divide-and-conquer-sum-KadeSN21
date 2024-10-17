@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/E1vcEWuv)
 # Divide and Conquer Sum
 
 In the lectures, we've covered merge sort, which uses a divide-and-conquer
@@ -25,3 +26,18 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+$$
+T(n) = 
+\begin{cases} 
+\(1) & \text{if } n \le 1, \\
+3T\left(\frac{n}{3}\right) + (n) & \text{if } n > 1
+\end{cases}
+$$
+
+
+By the Master Theorum, if $d = log_b(a), T(n) = O(n^d log(n))$. For this implementation, a = 3, b = 3, d = 1. $log_3(3) = 1, d = 1$ so this holds true, therefor $T(n) = O(n^1 log(n)) = O(n log(n))$
+
+Thus $T(n) = O(n log n)$
+
+Help: ChatGPT helped refresh my markdown formatting.
