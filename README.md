@@ -30,7 +30,7 @@ most important part. Add your answer to this markdown file.
 $$
 T(n) = 
 \begin{cases} 
-\mathcal{O}(1) & \text{if } n = 0 \le 1, \\
+\(1) & \text{if } n = 0 \le 1, \\
 3T\left(\frac{n}{3}\right) + (n) & \text{if } n > 1
 \end{cases}
 $$
