@@ -47,12 +47,15 @@ By this we can see that the pattern that persist is:
 
 $$3^kT\left(\frac{n}{3^k}\right) + (k * n)$$
 
-We know that it takes $log_{3}(n)$ reccursions to get to a point where $n/3^k < 1$, so we can denote $k$ as $log_{3}(n)$
+We know that it takes $log_{3}(n)$ reccursions to get to a point where $n/3^k < 1$, so we can denote $k$ as $log_{3}(n)$, giving us:
 
-$$3^{\log_{3}(n)}T\left(\frac{n}{3^{\log_{3}(n)}}\right) + (k * n)$$
+$$3^{\log_{3}(n)}T\left(\frac{n}{3^{\log_{3}(n)}}\right) + (log_{3}(n) * n)$$
 
+We also know that $T(n/3^{\log_{3}(n)} = 1$, and $3^{log_{3}(n)} = n so we can rewrite the relation as such: 
 
+$$n * 1 + (log_{3}(n) * n)$$
 
+We can ignore the lower order term of $n * 1$
 
 Thus the time colmplexity of this implementation is $\Theta(n log n)$
 
