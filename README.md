@@ -36,7 +36,8 @@ T(n) =
 $$
 
 We can solve this with expansion:
-$3T\left(\frac{n}{3}\right) + (n)$
+
+$$3T\left(\frac{n}{3}\right) + (n)$$
 
 Thus the time colmplexity of this implementation is $\Theta(n log n)$
 
