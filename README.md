@@ -43,7 +43,13 @@ $$9T\left(\frac{n}{9}\right) + (2n)$$
 
 $$27T\left(\frac{n}{27}\right) + (3n)$$
 
-By this we can see that the pattern that persist is: $$3^kT\left(\frac{n}{3^k}\right) + (i * n)$$
+By this we can see that the pattern that persist is: 
+
+$$3^kT\left(\frac{n}{3^k}\right) + (k * n)$$
+
+We know that it takes $log_{3}(n)$ times to get to a point where $n/3^k < 1$, so we can denote $i$ as $log_{3}(n)$
+
+$$3T\left(\frac{n}{3}\right) + (n)$$
 
 
 
