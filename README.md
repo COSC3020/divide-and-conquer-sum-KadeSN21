@@ -39,7 +39,13 @@ We can solve this with expansion:
 
 $$3T\left(\frac{n}{3}\right) + (n)$$
 
-$$4T\left(\frac{n}{4}\right) + (n)$$
+$$9T\left(\frac{n}{9}\right) + (2n)$$
+
+$$27T\left(\frac{n}{27}\right) + (3n)$$
+
+By this we can see that the pattern that persist is: $$3^kT\left(\frac{n}{3^k}\right) + (i * n)$$
+
+
 
 
 Thus the time colmplexity of this implementation is $\Theta(n log n)$
