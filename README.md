@@ -39,6 +39,9 @@ We can solve this with expansion:
 
 $$3T\left(\frac{n}{3}\right) + (n)$$
 
+$$4T\left(\frac{n}{4}\right) + (n)$$
+
+
 Thus the time colmplexity of this implementation is $\Theta(n log n)$
 
 Help: ChatGPT helped refresh my markdown formatting, and help from my roomate on how expansion works when solving a reccurence relation.
