@@ -35,9 +35,9 @@ T(n) =
 \end{cases}
 $$
 
+We can solve this with expansion:
+$3T\left(\frac{n}{3}\right) + (n)$
 
-By the Master Theorum, if $d = log_b(a), T(n) = O(n^d log(n))$. For this implementation, a = 3, b = 3, d = 1. $log_3(3) = 1, d = 1$ so this holds true, therefor $T(n) = O(n^1 log(n)) = O(n log(n))$
+Thus the time colmplexity of this implementation is $\Theta(n log n)$
 
-Thus $T(n) = O(n log n)$
-
-Help: ChatGPT helped refresh my markdown formatting.
+Help: ChatGPT helped refresh my markdown formatting, and help from my roomate on how expansion works when solving a reccurence relation.
